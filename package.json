@@ -27,7 +27,8 @@
     "cheerio",
     "data-analysis",
     "datamining",
-    "prompts"
+    "prompts",
+    "axios"
   ],
   "contributors": [{
     "email": "rizkyfauziilmi@gmail.com",

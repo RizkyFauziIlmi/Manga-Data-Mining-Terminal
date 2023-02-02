@@ -23,14 +23,18 @@ This is an application for manga data mining using terminal based on data in the
 - remote repo
 
 ```bash
-  git remote https://github.com/RizkyFauziIlmi Manga-Data-Mining-Terminal.git
+  git clone https://github.com/RizkyFauziIlmi Manga-Data-Mining-Terminal.git
+```
+```bash
   cd Manga-Data-Mining-Terminal
 ```
 - install dependencies
 
 ```bash
   npm install
-  // or
+```
+or
+```bash
   yarn install
 ```
 
@@ -40,10 +44,11 @@ This is an application for manga data mining using terminal based on data in the
 
 ```bash
   npm run start
-  // or
+```
+or
+```bash
   yarn run start
 ```
-
 
 ## Features
 

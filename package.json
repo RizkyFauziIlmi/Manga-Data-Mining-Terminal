@@ -2,7 +2,7 @@
   "name": "web-scrapping-into-json",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Rizky Fauzi Ilmi",
+  "description": "manga data mining application",
   "license": "MIT",
   "private": false,
   "type": "module",
@@ -17,5 +17,35 @@
     "json2csv": "^5.0.7",
     "nodemon": "^2.0.20",
     "prompts": "^2.4.2"
+  },
+  "keywords": [
+    "javascript",
+    "json",
+    "csv",
+    "terminal",
+    "command-line",
+    "cheerio",
+    "data-analysis",
+    "datamining",
+    "prompts"
+  ],
+  "contributors": [{
+    "email": "rizkyfauziilmi@gmail.com",
+    "name": "Rizky Fauzi Ilmi",
+    "url": "https://github.com/RizkyFauziIlmi"
+  }],
+  "author": {
+    "email": "rizkyfauziilmi@gmail.com",
+    "name": "Rizky Fauzi Ilmi",
+    "url": "https://github.com/RizkyFauziIlmi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal.git"
+  },
+  "homepage": "https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal#readme",
+  "bugs": {
+    "email": "rizkyfauziilmi@gmail.com",
+    "url": "https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal/issues"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "web-scrapping-into-json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rizky Fauzi Ilmi",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.2.2",
+    "axios-retry": "^3.3.1",
+    "cheerio": "^1.0.0-rc.12",
+    "json2csv": "^5.0.7",
+    "nodemon": "^2.0.20",
+    "prompts": "^2.4.2"
+  }
+}

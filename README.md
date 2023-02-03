@@ -6,9 +6,9 @@
 This is an application for manga data mining using terminal based on data in the form of JSON and CSV. This application allows users to extract meaningful insights and information about manga through a simple and user-friendly interface. The data is collected and processed through advanced data mining techniques, then transformed into either JSON or CSV format. With this application, users can easily perform complex analysis on manga data without the need for a graphical user interface. The application is perfect for data analysts, manga enthusiasts, and anyone who wants to gain insights into the world of manga.
 
 ## List of Contents
-- [Demo](https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal/edit/master/README.md#demo)
-- [Installation](https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal/edit/master/README.md#installation)
-- [Features](https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal/edit/master/README.md#features)
+- [Demo](https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal#demo)
+- [Installation](https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal#installation)
+- [Features](https://github.com/RizkyFauziIlmi/Manga-Data-Mining-Terminal#features)
 
 ## Demo
 

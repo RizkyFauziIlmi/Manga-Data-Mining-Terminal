@@ -1,1 +1,5 @@
 /*node*/
+
+/src/data/*
+!/src/data/example.json
+!/src/data/chapters/exampleChapter.json

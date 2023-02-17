@@ -615,7 +615,7 @@ const Mining = {
         if (response.status === 200) {
             const $ = cheerio.load(response.data)
 
-            let endpoint, title, relative = [], title_ref, link_ref, thumb, score, scoredBy, rawInfo, genre = [], genre_title, genre_ref, sinopsis, teaser = [], teaser_image, similar = [], similar_image, similar_title, similar_endpoint, similar_desc, chapter_list = [], chapter_title, chapter_date, chapter_endpoint
+            let endpoint, title, relative = [], title_ref, link_ref, thumb, score, scoredBy, rawInfo, genre = [], genre_title, genre_ref, sinopsis, teaser = [], teaser_image, similar = [], similar_image, similar_title, similar_endpoint, similar_desc, chapter_list = [], chapter_title, chapter_date, chapter_endpoint, grafis, konten
             title = $(".entry-title").text().replace('Komik ', "")
             thumb = $(".thumb").find("img").attr("src")
             score = $(".ratingmanga").find("i").text()
@@ -640,7 +640,6 @@ const Mining = {
                 return acc;
             }, []);
 
-
             $(".genre-info > a").each((i, el) => {
                 genre_title = $(el).text()
                 genre_ref = $(el).attr("href").replace("/genres/", "")
@@ -650,6 +649,30 @@ const Mining = {
                     genre_ref
                 })
             })
+
+            let additionalGenres = info.filter((item) => {
+                return item.Grafis || item.Konten || item.Tema
+            })
+            let additionalGenresFormat = []
+            additionalGenres.forEach(obj => {
+                // loop through each key-value pair in the object
+                Object.entries(obj).forEach(([key, value]) => {
+                    // split the value by comma and create a new object for each genre
+                    value.split(',').forEach(genre => {
+                        // remove any leading/trailing whitespace
+                        genre = genre.trim();
+                        // create a new object with the desired format
+                        const newGenre = {
+                            genre_title: genre,
+                            genre_ref: genre.toLowerCase().replace(/ /g, '-')
+                        };
+                        // push the new object to the new array
+                        additionalGenresFormat.push(newGenre);
+                    });
+                });
+            })
+
+            let newGenre = genre.concat(additionalGenresFormat)
 
             $(".spoiler > div").each((i, el) => {
                 teaser_image = $(el).find("img").attr("src")
@@ -696,7 +719,7 @@ const Mining = {
                 scoredBy,
                 relative,
                 info,
-                genre,
+                genre: newGenre,
                 teaser,
                 similar,
                 chapter_list,
